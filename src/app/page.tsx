@@ -428,7 +428,7 @@ export default function Home() {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl luxury-input outline-none"
-                  placeholder="請輸入帳號"
+                  placeholder="輸入格式：朕/xxxxxx 或 3A/xxxxxx"
                 />
               </div>
 
