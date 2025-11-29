@@ -292,8 +292,8 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 6 Button Grid - Replace placeholder images with your own */}
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-1 mb-6">
+        {/* 5 Button Grid - Social Media Links */}
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-1 mb-6">
           {/* Button 1 - LINE */}
           <a
             href="https://line.me/R/ti/p/@250zfkzz"
@@ -369,20 +369,6 @@ export default function Home() {
             />
           </a>
 
-          {/* Button 6 - Replace /button6.png and /button6-link with your own */}
-          <a
-            href="/button6-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pulse-button block"
-            style={{ animationDelay: '1s' }}
-          >
-            <img
-              src="https://ugc.same-assets.com/b3f7OC3SgXYiD7f2ZscmyJBKZEzjPGZA.png"
-              alt="Button 6"
-              className="w-1/2 h-auto mx-auto rounded-lg hover:scale-105 transition-transform shadow-lg"
-            />
-          </a>
         </div>
 
         <div className="luxury-card rounded-2xl p-6 md:p-8">
