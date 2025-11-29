@@ -67,6 +67,12 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJI...${colors.reset}`);
 // Initialize Supabase client
 const supabase = createClient(supabaseUrl, supabaseKey);
 
+// Helper function to get error message
+function getErrorMessage(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  return String(error);
+}
+
 // Test connection function
 async function testConnection() {
   try {
@@ -76,7 +82,7 @@ async function testConnection() {
     console.log(`${colors.green}✅ Supabase 連線成功！${colors.reset}`);
     return true;
   } catch (error) {
-    console.log(`${colors.red}❌ Supabase 連線失敗：${error.message}${colors.reset}`);
+    console.log(`${colors.red}❌ Supabase 連線失敗：${getErrorMessage(error)}${colors.reset}`);
     return false;
   }
 }
@@ -106,7 +112,7 @@ async function testStorageBucket() {
       return false;
     }
   } catch (error) {
-    console.log(`${colors.red}❌ 檢查 Storage 失敗：${error.message}${colors.reset}`);
+    console.log(`${colors.red}❌ 檢查 Storage 失敗：${getErrorMessage(error)}${colors.reset}`);
     return false;
   }
 }
@@ -170,7 +176,7 @@ async function testStoragePolicies() {
     console.log(`${colors.green}✅ 刪除測試成功！${colors.reset}`);
     return true;
   } catch (error) {
-    console.log(`${colors.red}❌ 測試 Storage 權限失敗：${error.message}${colors.reset}`);
+    console.log(`${colors.red}❌ 測試 Storage 權限失敗：${getErrorMessage(error)}${colors.reset}`);
     return false;
   }
 }
@@ -219,5 +225,5 @@ async function runDiagnostics() {
 
 // Run diagnostics
 runDiagnostics().catch(err => {
-  console.log(`${colors.red}❌ 執行診斷時發生錯誤：${err.message}${colors.reset}`);
+  console.log(`${colors.red}❌ 執行診斷時發生錯誤：${getErrorMessage(err)}${colors.reset}`);
 });
