@@ -214,21 +214,21 @@ export default function Home() {
         { name: '58獎金', prob: '80%', color: 'cyan', emoji: '💰' },
         { name: '168獎金', prob: '10%', color: 'pink', emoji: '💎' },
         { name: '🏀 精準體育單', prob: '9%', color: 'purple', emoji: '🏀' },
-        { name: '388獎金', prob: '1%', color: 'green', emoji: '🎰' },
+        { name: '288獎金', prob: '1%', color: 'green', emoji: '🎰' },
       ];
     } else if (selectedAmount === '5000') {
       return [
         { name: '188獎金', prob: '80%', color: 'cyan', emoji: '💰' },
         { name: '388獎金', prob: '10%', color: 'pink', emoji: '💎' },
         { name: '🏀 精準體育單', prob: '9%', color: 'purple', emoji: '🏀' },
-        { name: '888獎金', prob: '1%', color: 'green', emoji: '🎰' },
+        { name: '666獎金', prob: '1%', color: 'green', emoji: '🎰' },
       ];
     } else {
       return [
         { name: '388獎金', prob: '80%', color: 'cyan', emoji: '💰' },
         { name: '666獎金', prob: '10%', color: 'pink', emoji: '💎' },
         { name: '🏀 精準體育單', prob: '9%', color: 'purple', emoji: '🏀' },
-        { name: '1888獎金', prob: '1%', color: 'green', emoji: '🎰' },
+        { name: '2888獎金', prob: '1%', color: 'green', emoji: '🎰' },
       ];
     }
   };

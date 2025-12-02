@@ -11,7 +11,9 @@ type Prize =
   | '188獎金'
   | '888獎金'
   | '666獎金'
-  | '1888獎金';
+  | '1888獎金'
+  | '288獎金'
+  | '2888獎金';
 
 interface PrizeConfig {
   name: Prize;
@@ -46,14 +48,14 @@ export default function SlotMachine({ selectedAmount, onWin }: SlotMachineProps)
         { name: '58獎金', probability: 0.80, emoji: '💰', color: '#00f5ff' },
         { name: '168獎金', probability: 0.10, emoji: '💎', color: '#ff5ef8' },
         { name: '🏀 精準體育單', probability: 0.09, emoji: '🏀', color: '#a78bfa' },
-        { name: '388獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
+        { name: '288獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
       ];
     } else if (selectedAmount === '5000') {
       return [
         { name: '188獎金', probability: 0.80, emoji: '💰', color: '#00f5ff' },
         { name: '388獎金', probability: 0.10, emoji: '💎', color: '#ff5ef8' },
         { name: '🏀 精準體育單', probability: 0.09, emoji: '🏀', color: '#a78bfa' },
-        { name: '888獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
+        { name: '666獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
       ];
     } else {
       // 10000
@@ -61,7 +63,7 @@ export default function SlotMachine({ selectedAmount, onWin }: SlotMachineProps)
         { name: '388獎金', probability: 0.80, emoji: '💰', color: '#00f5ff' },
         { name: '666獎金', probability: 0.10, emoji: '💎', color: '#ff5ef8' },
         { name: '🏀 精準體育單', probability: 0.09, emoji: '🏀', color: '#a78bfa' },
-        { name: '1888獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
+        { name: '2888獎金', probability: 0.01, emoji: '🎰', color: '#7cff84' },
       ];
     }
   };
